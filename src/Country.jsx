@@ -14,7 +14,7 @@ export default function Country() {
         setLoading(false);
       })
       .catch((error) => {
-        console.error(error); // 🚨 REQUIRED by Cypress
+         console.error("Error fetching data:", error);
         setLoading(false);
       });
   }, []);
